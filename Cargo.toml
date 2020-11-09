@@ -1,0 +1,22 @@
+[package]
+name = "aproxy"
+version = "0.1.0"
+authors = ["Vincent Hanquez <vincent@typed.io>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pretty_env_logger = "0.4"
+warp = "0.2"
+tokio = { version = "0.2", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+bigdecimal = { version = "0.2", features = ["serde"] }
+reqwest = "0.10"
+url = { version = "2.1", features = ["serde"] }
+thiserror = "1.0"
+clap = "2.33"
+
+[build-dependencies]
+versionisator = "1.0.2"
